@@ -13,9 +13,9 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text.match(/\b[A-Z]\p{Punct}\b/)
+  if text.match(/\b[A-Z]\p{Punct}\b/) # if a word begins with a caps letter and ends with punct
     return true
-  elsif text.match(/\b[a-z]\p{Punct}\b/)
+  elsif text.match(/\b[a-z]\p{Punct}\b/) # if a word begins with lower case and ends with punct
     return false
   end
 end
