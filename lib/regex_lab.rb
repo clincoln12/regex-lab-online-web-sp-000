@@ -15,9 +15,6 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   return true if text.scan(/\p{Punct}/)
 
-  else
-    false
-
 end
 
 def valid_phone_number?(phone)
